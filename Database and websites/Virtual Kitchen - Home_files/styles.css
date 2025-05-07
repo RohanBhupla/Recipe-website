@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  #main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .multilingual-titles {
+    margin-top: 10px;
+  }
+  
+  .translation {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #ccc;
+    font-style: italic;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+  
+  .recipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .recipe .description {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .ingredient-list {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  .cooking-step {
+    margin: 10px 0;
+  }
+  
+  .student-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .student-info h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .student-info p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .student-info a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .student-info a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Kitchen - Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Virtual Kitchen Logo" width="50">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="recipes.html"><i class="fas fa-utensils"></i> Recipes</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+    <h1 class="title">Contact Me</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Book a Private Cooking Session</h2>
+      <form id="contact-form" onsubmit="validateForm()">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Aston University email" required>
+        <label for="confirm-email">Confirm Email:</label>
+        <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm your email" required>
+        <label for="contact-method">Preferred Contact Method:</label>
+        <select id="contact-method" name="contact-method">
+          <option value="phone">Phone</option>
+          <option value="email">Email</option>
+        </select>
+        <label for="date">Select a Date:</label>
+        <input type="date" id="date" name="date" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The best and only Kitchen you will ever need</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

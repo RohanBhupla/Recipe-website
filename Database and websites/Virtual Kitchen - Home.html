@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en" data-qb-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Kitchen - Home</title>
+  <link rel="stylesheet" href="./Virtual Kitchen - Home_files/styles.css">
+  <link rel="stylesheet" href="./Virtual Kitchen - Home_files/all.min.css">
+<style data-emotion="css-global" data-s=""></style><style type="text/css">.lf-progress {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  /* margin: 0 10px; */
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lf-progress:focus {
+  outline: none;
+  border: none;
+}
+.lf-progress::-moz-range-track {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.lf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-moz-range-thumb {
+  -moz-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.lf-progress::-ms-fill-lower {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.lf-progress:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.lf-player-container :focus {
+  outline: 0;
+}
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-player-btn-container {
+  display: flex;
+  align-items: center;
+}
+.lf-player-btn {
+  cursor: pointer;
+  fill: #999;
+  width: 14px;
+}
+
+.lf-player-btn.active {
+  fill: #555;
+}
+
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  padding: 10px;
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-arrow {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: -9px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+}
+
+.lf-left-align,
+.lf-left-align .lfarrow {
+  left: 0;
+  right: unset;
+}
+
+.lf-right-align,
+.lf-right-align .lf-arrow {
+  right: 0;
+  left: unset;
+}
+
+.lf-text-input {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60px;
+  margin: 0;
+}
+
+.lf-color-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.lf-color-selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-color-component {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-color-component strong {
+  width: 40px;
+}
+
+.lf-color-component input[type='range'] {
+  margin: 0 0 0 10px;
+}
+
+.lf-color-component input[type='number'] {
+  width: 50px;
+  margin: 0 0 0 10px;
+}
+
+.lf-color-preview {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.lf-preview {
+  height: 60px;
+  width: 60px;
+}
+
+.lf-popover-snapshot {
+  width: 150px;
+}
+.lf-popover-snapshot h5 {
+  margin: 5px 0 10px 0;
+  font-size: 0.75rem;
+}
+.lf-popover-snapshot a {
+  display: block;
+  text-decoration: none;
+}
+.lf-popover-snapshot a:before {
+  content: '⥼';
+  margin-right: 5px;
+}
+.lf-popover-snapshot .lf-note {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+.lf-player-controls > div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lf-player-controls > div:first-child {
+  margin-left: 0px;
+}
+.lf-player-controls > div:last-child {
+  margin-right: 0px;
+}
+</style></head>
+<body>
+  <header id="main-header">
+    <div class="logo">
+      <img src="./Virtual Kitchen - Home_files/logo.png" alt="Virtual Kitchen Logo" width="50">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="http://127.0.0.1:5500/recipes.html"><i class="fas fa-utensils"></i> Recipes</a></li>
+        <li><a href="http://127.0.0.1:5500/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+    <h1 class="title">Welcome to the best and only Kitchen you'll ever need</h1>
+    <div class="multilingual-titles">
+      <p class="translation">Witaj w najlepszej i jedynej kuchni, jakiej kiedykolwiek będziesz potrzebować</p>
+      <p class="translation">欢迎来到您唯一需要的厨房</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>About My Kitchen</h2>
+      <p>Welcome to my Kitchen! I plan on sharing my passion and expertise for cooking and my <em>FAVOURITE</em> recipes from around the world.</p>
+      <blockquote>"Cooking is an echo of life, good food will bring anyone together."</blockquote>
+    </section>
+
+    <section>
+      <h2>Signature Dishes</h2>
+      <ul>
+        <li>Chicken Biryani</li>
+        <img src="./Virtual Kitchen - Home_files/chicken-biryani.avif" alt="Chicken Biryani">
+        <li>Bigos (Polish Hunter's Stew)</li>
+        <img src="./Virtual Kitchen - Home_files/bigos.jpeg" alt="Bigos - Polish Hunter&#39;s Stew">
+        <li>Mooncake</li>
+        <img src="./Virtual Kitchen - Home_files/mooncake.jpeg" alt="Traditional Chinese Mooncake">
+      </ul>
+      <p>Explore my <a href="http://127.0.0.1:5500/recipes.html">recipes</a> to learn how to make these delicious dishes!</p>
+    </section>
+
+    <section class="student-info">
+      <h2>Student Information</h2>
+      <p><strong>Name:</strong> Rohan Bhupla</p>
+      <p><strong>Email:</strong> <a href="mailto:240147194@aston.ac.uk">240147194@aston.ac.uk</a></p>
+      <p><strong>Student Number:</strong> 240147194</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 The best and only Kitchen you will ever need</p>
+  </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<div id="otherside-root" style="z-index: 2147483647; position: relative;"><div id="hyper-main-container"><div id="hyper-menu-shadow-root" style="all: initial;"><template shadowrootmode="open"><div class="root-styles responsive-styles"><div><div id="windows"></div><div id="hyperwrite-menu-root" data-cy="menu"><div id="typeahead-menu-container"><div id="menu-view-container" class="react-draggable react-shadow-1gdlwuu" style="transform: translate(0px, 0px);"><div style="display: flex; align-items: center; justify-content: center;"><div class="react-shadow-1159bpp"><div class="react-shadow-13wqu4i"><img alt="Hyper Icon" draggable="false" src="chrome-extension://kljjoeapehcmaphfcjkmbhkinoaopdnd/08059a6dbd445c1fb9d7.svg" aria-label="Please log in to use Personal Assistant" class=" react-shadow-1hqtm5a" style="filter: grayscale(100%);"></div></div></div></div></div></div></div></div><style data-emotion="react-shadow-global" data-s=""></style><style data-emotion="react-shadow" data-s=""></style></template></div><div id="assistant-shadow-root" style="all: initial;"><template shadowrootmode="open"><div class="assistant-styles"><div></div></div><style data-emotion="react-shadow-global" data-s=""></style></template></div></div></div><div id="SASContainer" class="sasext sasextdklgc sasdklgc-display-none ui-resizable ui-draggable">
+			<div id="sas-panel-contents">
+				<div class="first-row sas-header ui-draggable-handle">
+          <div class="tr-btns">
+            <span style="float:right"><a id="closeSAS" class="topButton"></a></span>
+          </div> 
+          <div class="t-logo">
+            <a href="https://selleramp.com/" target="_blank">
+              <img class="sas-logo-image" src="chrome-extension://kidmffepbniamfbibhfgdakkggchipjl/images/sas-logo.svg">
+            </a> 
+          </div>
+          <a href="https://sas.selleramp.com/account?src=ext&amp;ver=2.4.0e" target="sasFrame">
+            <img src="chrome-extension://kidmffepbniamfbibhfgdakkggchipjl/images/user-regular.svg" alt="account-icon" class="sas-account-icon">
+          </a>
+				</div>
+    <div class="second-row">
+      <div id="loadingMessage" style="display: none;">
+        <img class="loadingimg" src="chrome-extension://kidmffepbniamfbibhfgdakkggchipjl/images/exticon.png">
+      </div>
+      <iframe name="sasFrame" id="sasFrame" allowtransparency="true" style="display: block;" src="./Virtual Kitchen - Home_files/saved_resource.html"></iframe>
+    </div>
+    <div class="bottom-row"> 
+      <nav class="sasdklgc-menu"><ul id="position-buttons" class="sasdklgc-toolbar-buttons"><li id="li-pos-0" data-position="0"><img src="chrome-extension://kidmffepbniamfbibhfgdakkggchipjl/images/floating.svg" title="Floating"></li><li id="li-pos-1" data-position="1"><img src="chrome-extension://kidmffepbniamfbibhfgdakkggchipjl/images/docked-left-icon.svg" title="Docked Left"></li><li id="li-pos-2" data-position="2"><img src="chrome-extension://kidmffepbniamfbibhfgdakkggchipjl/images/docked-right-icon.svg" title="Docked Right"></li></ul><ul id="url-buttons" class="sasdklgc-toolbar-buttons">
+<li id="home-btn">
+  <a href="https://sas.selleramp.com/sas/lookup?src=ext&amp;ver=2.4.0e" target="sasFrame"><img src="chrome-extension://kidmffepbniamfbibhfgdakkggchipjl/images/house-chimney.svg" title="Home" alt="home">
+</a></li><a href="https://sas.selleramp.com/sas/lookup?src=ext&amp;ver=2.4.0e" target="sasFrame">
+</a><li id="history-btn"><a href="https://sas.selleramp.com/sas/lookup?src=ext&amp;ver=2.4.0e" target="sasFrame">
+  </a><a href="https://sas.selleramp.com/sas/history?src=ext&amp;ver=2.4.0e" target="sasFrame"><img src="chrome-extension://kidmffepbniamfbibhfgdakkggchipjl/images/clock-rotate-left.svg" title="History" alt="history">
+</a></li><a href="https://sas.selleramp.com/sas/history?src=ext&amp;ver=2.4.0e" target="sasFrame">
+</a><li id="settings-btn"><a href="https://sas.selleramp.com/sas/history?src=ext&amp;ver=2.4.0e" target="sasFrame">
+  </a><a href="https://sas.selleramp.com/user/update?src=ext&amp;ver=2.4.0e" target="sasFrame"><img src="chrome-extension://kidmffepbniamfbibhfgdakkggchipjl/images/gear.svg" title="Settings" alt="settings">
+</a></li><a href="https://sas.selleramp.com/user/update?src=ext&amp;ver=2.4.0e" target="sasFrame">
+</a><li id="contact-btn"><a href="https://sas.selleramp.com/user/update?src=ext&amp;ver=2.4.0e" target="sasFrame">
+  </a><a href="mailto:support@selleramp.com" target="_blank">
+    <img src="chrome-extension://kidmffepbniamfbibhfgdakkggchipjl/images/envelope.svg" title="Contact" alt="contact">
+  </a>
+</li></ul></nav>
+    </div>
+  </div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div></body></html>
